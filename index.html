@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Merkez Lokantası</title>
+
+<style>
+:root{
+  --bg:#0f0f0f;
+  --panel:#1c1c1c;
+  --gold:#ffd700;
+  --text:#ffffff;
+  --muted:#cfcfcf;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  font-family:Inter,system-ui,Arial;
+  background:var(--bg);
+  color:var(--text);
+  zoom:100%;
+}
+
+/* NAVBAR */
+header{
+  position:fixed;
+  top:0; width:100%;
+  background:#000;
+  border-bottom:2px solid var(--gold);
+  z-index:999;
+}
+.nav{
+  max-width:1400px;
+  margin:auto;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:12px 16px;
+}
+.logo{
+  font-size:22px;
+  font-weight:800;
+  color:var(--gold);
+}
+.menu{
+  display:flex;
+  gap:10px;
+  flex-wrap:wrap;
+}
+.menu a{
+  color:#fff;
+  text-decoration:none;
+  font-size:13px;
+  padding:6px 10px;
+  border-radius:6px;
+}
+.menu a:hover{
+  background:var(--gold);
+  color:#000;
+}
+
+/* CONTENT */
+.container{
+  max-width:1400px;
+  margin:auto;
+  padding:110px 16px 40px;
+}
+.section{
+  margin-bottom:70px;
+}
+.section h2{
+  color:var(--gold);
+  border-bottom:2px solid var(--gold);
+  padding-bottom:6px;
+  margin-bottom:20px;
+}
+
+/* CARDS */
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:14px;
+}
+.card{
+  background:var(--panel);
+  padding:14px;
+  border-radius:14px;
+  border:1px solid rgba(255,215,0,.25);
+}
+.card h3{
+  margin:0 0 6px;
+  color:var(--gold);
+  font-size:16px;
+}
+.price{
+  font-weight:700;
+  margin-bottom:6px;
+}
+.desc{
+  font-size:13px;
+  color:var(--muted);
+  margin-bottom:4px;
+}
+.mat{
+  font-size:12px;
+  color:#ddd;
+}
+
+/* MOBILE */
+@media(max-width:600px){
+  .menu{justify-content:center}
+  .logo{width:100%;text-align:center}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="nav">
+    <div class="logo">MERKEZ LOKANTASI</div>
+    <div class="menu">
+      <a href="#corba">Çorba</a>
+      <a href="#pide">Pide</a>
+      <a href="#doner">Döner</a>
+      <a href="#sebze">Sebzeli</a>
+      <a href="#et">Et</a>
+      <a href="#zeytin">Zeytinyağlı</a>
+      <a href="#tavuk">Tavuk</a>
+      <a href="#kebap">Kebap</a>
+      <a href="#tatli">Tatlı</a>
+      <a href="#icecek">İçecek</a>
+    </div>
+  </div>
+</header>
+
+<div class="container">
+
+<!-- ÇORBALAR -->
+<section id="corba" class="section">
+<h2>🍲 Çorbalar</h2>
+<div class="grid">
+<div class="card"><h3>Ayak Paça</h3><div class="price">260 ₺</div><div class="desc">Uzun süre kaynatılmış şifa deposu çorba.</div><div class="mat">Dana ayak paça, sarımsak, sirke</div></div>
+<div class="card"><h3>Mercimek</h3><div class="price">170 ₺</div><div class="desc">Klasik ve hafif.</div><div class="mat">Mercimek, soğan, havuç</div></div>
+<div class="card"><h3>Ezogelin</h3><div class="price">170 ₺</div><div class="desc">Baharatlı ve aromatik.</div><div class="mat">Mercimek, bulgur, nane</div></div>
+<div class="card"><h3>Kelle Paça</h3><div class="price">220 ₺</div><div class="desc">Geleneksel lezzet.</div><div class="mat">Dana kelle, paça</div></div>
+<div class="card"><h3>İşkembe</h3><div class="price">220 ₺</div><div class="desc">Gece ve sabah vazgeçilmezi.</div><div class="mat">Dana işkembe</div></div>
+<div class="card"><h3>Tavuk Suyu</h3><div class="price">200 ₺</div><div class="desc">Hafif ve besleyici.</div><div class="mat">Tavuk eti, pirinç</div></div>
+<div class="card"><h3>Karışık</h3><div class="price">260 ₺</div><div class="desc">Sakatat karışımı.</div><div class="mat">Kelle, paça, beyin</div></div>
+<div class="card"><h3>Beyin</h3><div class="price">240 ₺</div><div class="desc">Yumuşak dokulu.</div><div class="mat">Dana beyin</div></div>
+</div>
+</section>
+
+<!-- PIDELER -->
+<section id="pide" class="section">
+<h2>🥖 Pideler</h2>
+<div class="grid">
+<div class="card"><h3>Kıymalı</h3><div class="price">230 ₺</div><div class="desc">Taş fırın.</div><div class="mat">Dana kıyma</div></div>
+<div class="card"><h3>Kıymalı Yumurtalı</h3><div class="price">240 ₺</div><div class="desc">Doyurucu.</div><div class="mat">Dana kıyma, yumurta</div></div>
+<div class="card"><h3>Kıymalı Kaşarlı</h3><div class="price">280 ₺</div><div class="desc">Bol kaşarlı.</div><div class="mat">Dana kıyma, kaşar</div></div>
+<div class="card"><h3>Kuşbaşılı Sade</h3><div class="price">280 ₺</div><div class="desc">Yumuşak et.</div><div class="mat">Dana kuşbaşı</div></div>
+<div class="card"><h3>Kuşbaşılı Kaşarlı</h3><div class="price">330 ₺</div><div class="desc">Zengin lezzet.</div><div class="mat">Dana kuşbaşı, kaşar</div></div>
+<div class="card"><h3>Kaşarlı Sade</h3><div class="price">250 ₺</div><div class="desc">Peynir severlere.</div><div class="mat">Kaşar peyniri</div></div>
+<div class="card"><h3>Kaşarlı Sucuklu</h3><div class="price">280 ₺</div><div class="desc">Bol sucuklu.</div><div class="mat">Sucuk, kaşar</div></div>
+<div class="card"><h3>Sebzeli</h3><div class="price">250 ₺</div><div class="desc">Hafif.</div><div class="mat">Mevsim sebzeleri</div></div>
+<div class="card"><h3>Karışık</h3><div class="price">320 ₺</div><div class="desc">Her şeyden.</div><div class="mat">Et, kaşar</div></div>
+<div class="card"><h3>Lahmacun</h3><div class="price">170 ₺</div><div class="desc">İnce hamur.</div><div class="mat">Dana kıyma</div></div>
+<div class="card"><h3>Kaşarlı Lahmacun</h3><div class="price">200 ₺</div><div class="desc">Farklı tat.</div><div class="mat">Dana kıyma, kaşar</div></div>
+</div>
+</section>
+
+<!-- DÖNER -->
+<section id="doner" class="section">
+<h2>🥙 Dönerler</h2>
+<div class="grid">
+<div class="card"><h3>Sade Döner</h3><div class="price">450 ₺</div><div class="desc">Odun ateşi.</div><div class="mat">Dana eti</div></div>
+<div class="card"><h3>İskender</h3><div class="price">450 ₺</div><div class="desc">Yoğurtlu soslu.</div><div class="mat">Dana döner, yoğurt</div></div>
+<div class="card"><h3>Pilav Üstü</h3><div class="price">470 ₺</div><div class="desc">Doyurucu.</div><div class="mat">Dana döner, pilav</div></div>
+<div class="card"><h3>Yarım Ekmek</h3><div class="price">250 ₺</div><div class="desc">Pratik.</div><div class="mat">Dana döner</div></div>
+<div class="card"><h3>Dürüm</h3><div class="price">250 ₺</div><div class="desc">Lavaş içinde.</div><div class="mat">Dana döner</div></div>
+<div class="card"><h3>Çift Lavaş</h3><div class="price">270 ₺</div><div class="desc">Bol porsiyon.</div><div class="mat">Dana döner</div></div>
+</div>
+</section>
+
+<!-- TATLI -->
+<section id="tatli" class="section">
+<h2>🍮 Tatlılar</h2>
+<div class="grid">
+<div class="card"><h3>Künefe</h3><div class="price">180 ₺</div><div class="desc">Antakya usulü.</div><div class="mat">Kadayıf, peynir</div></div>
+<div class="card"><h3>Kadayıf</h3><div class="price">150 ₺</div><div class="desc">Şerbetli.</div><div class="mat">Kadayıf</div></div>
+<div class="card"><h3>Sütlaç</h3><div class="price">150 ₺</div><div class="desc">Fırın.</div><div class="mat">Süt, pirinç</div></div>
+</div>
+</section>
+
+<!-- İÇECEK -->
+<section id="icecek" class="section">
+<h2>🥤 İçecekler</h2>
+<div class="grid">
+<div class="card"><h3>Cola / Fanta / Sprite</h3><div class="price">70 ₺</div></div>
+<div class="card"><h3>Ayran (1 Lt)</h3><div class="price">80 ₺</div></div>
+<div class="card"><h3>Şalgam</h3><div class="price">45 ₺</div></div>
+<div class="card"><h3>Su</h3><div class="price">20 ₺</div></div>
+</div>
+</section>
+
+</div>
+</body>
+</html>
